@@ -5,7 +5,7 @@ class Clientes(models.Model):
     edad =models.SmallIntegerField()
     email =models.EmailField()
     ciudad =models.CharField(max_length=100)
-    telefono =models.SmallIntegerField()
+    telefono =models.CharField(max_length=15)
     
     def __str__(self):
         return self.name
